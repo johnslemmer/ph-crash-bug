@@ -1,0 +1,21 @@
+{
+  "cli": {
+    "version": ">= 3.3.0",
+    "appVersionSource": "remote",
+    "promptToConfigurePushNotifications": false
+  },
+  "build": {
+    "base": {
+      "node": "20.11.0",
+      "ios": {
+        "resourceClass": "m-medium",
+        "image": "latest"
+      }
+    },
+    "preview": {
+      "extends": "base",
+      "channel": "preview",
+      "distribution": "internal"
+    }
+  },
+}
